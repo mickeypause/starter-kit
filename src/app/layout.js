@@ -1,7 +1,6 @@
 import '../assets/styles/global.css'
 import '../assets/styles/constants.css'
 import { Open_Sans } from 'next/font/google'
-import Header from '@/components/ui/Header'
 import Providers from './providers'
 
 export const metadata = {
@@ -20,10 +19,7 @@ export default function RootLayout({ children }) {
       className={font.className}
     >
       <body>
-        <Providers>
-          <Header />
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
