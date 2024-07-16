@@ -18,6 +18,7 @@ const JobItem = ({ title, description, company, link, location, date }) => {
         <span>{date}</span>
       </div>
     </div>
+    //
   )
 }
 
